@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foods</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#dishes" onclick="closeNavbar()">
+        <i class="fa-solid fa-utensils"></i>
+        <p>dishes</p>
+      </a>
+      <a href="#gallery" onclick="closeNavbar()">
+        <i class="fa-solid fa-image"></i>
+        <p>gallery</p>
+      </a>
+      <a href="#contact" onclick="closeNavbar()">
+        <i class="fa-solid fa-blender-phone"></i>
+        <p>contact</p>
+      </a>
+    </nav>
+    <div class="toggler" onclick="toggler()"></div>
+    <!-- Navbar -->
+    <!-- Section 2 -->
+    <section class="section-2" id="dishes">
+      <h1 class="section-heading">famous dishes</h1>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./images/card-img-1.jpg" alt="veg biryani" />
+          <h3 class="card-name">Veg Biryani</h3>
+        </div>
+        <div class="card">
+          <img src="./images/card-img-2.jpg" alt="dal makhani" />
+          <h3 class="card-name">Dal Makhani</h3>
+        </div>
+        <div class="card">
+          <img src="./images/card-img-3.jpg" alt="panner butter masala" />
+          <h3 class="card-name">Panner Butter Masala</h3>
+        </div>
+      </div>
+    </section>
+    <!-- End of Section 2 -->
+    <!-- Section 3 -->
+    <section class="section-3" id="gallery">
+      <h1 class="section-heading">gallery</h1>
+      <div class="gallery">
+        <div class="gallery-info">
+          <img
+            src="./images/gallery-img-1.jpg"
+            alt="pancakes"
+            class="food-image"
+          />
+          <h3 class="food-name">pancakes</h3>
+          <p class="food-description">
+            A pancake (or hotcake, griddlecake, or flapjack) is a flat cake,
+            often thin and round, prepared from a starch-based batter that may
+            contain eggs, milk and butter.
+          </p>
+        </div>
+        <div class="gallery-info">
+          <img
+            src="./images/gallery-img-2.jpg"
+            alt="cupcakes"
+            class="food-image"
+          />
+          <h3 class="food-name">cupcakes</h3>
+          <p class="food-description">
+            A cupcake (AmE), fairy cake (BrE), or bun (IrE) is a small cake
+            designed to serve one person, which may be baked in a small thin
+            paper or aluminum cup.
+          </p>
+        </div>
+        <div class="gallery-info">
+          <img
+            src="./images/gallery-img-4.jpg"
+            alt="burger"
+            class="food-image"
+          />
+          <h3 class="food-name">burger</h3>
+          <p class="food-description">
+            A burger is a patty of ground beef grilled and placed between two
+            halves of a bun.
+          </p>
+        </div>
+        <div class="gallery-info">
+          <img
+            src="./images/gallery-img-3.jpg"
+            alt="sandwich"
+            class="food-image"
+          />
+          <h3 class="food-name">sandwich</h3>
+          <p class="food-description">
+            A sandwich is a food typically consisting of vegetables, sliced
+            cheese or meat, placed on or between slices of bread.
+          </p>
+        </div>
+        <div class="gallery-info">
+          <img
+            src="./images/gallery-img-6.jpg"
+            alt="vegetables"
+            class="food-image"
+          />
+          <h3 class="food-name">vegetables</h3>
+          <p class="food-description">
+            Most vegetables are low in calories and have a water content of over
+            70 percent, with only about 3.5 percent protein and less than 1
+            percent fat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End of Section 3 -->
+    <!-- Section 4 -->
+    <section class="section-4" id="contact">
+      <h1 class="section-heading">contact me</h1>
+      <form class="form-container">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-group"
+          placeholder="enter your name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-group"
+          placeholder="enter your email"
+        />
+        <input
+          type="tel"
+          name="contact"
+          id="contact"
+          class="form-group"
+          placeholder="enter your contant number"
+        />
+        <textarea
+          placeholder="enter your message"
+          class="form-group"
+        ></textarea>
+      </form>
+      <button type="submit" class="submit form-group">submit here</button>
+    </section>
+    <!-- End of Section 4 -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-up">
+        <div class="left">
+          <p>Thank you for visiting my website</p>
+        </div>
+        <div class="center">
+          <ul>
+            <!-- <li><a href="#home">Home</a></li> -->
+            <li><a href="#dishes">Dishes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <a href="mailto:devarashettynaveen24@gmail.com">mail me</a>
+          <a href="tel:913302608">contact me</a>
+        </div>
+      </div>
+      <div class="footer-down">
+        <p>
+          &copy; <span id="date"></span> all rights reserved by d naveen kumar
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <!-- </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
